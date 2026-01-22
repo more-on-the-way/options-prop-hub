@@ -1,0 +1,54 @@
+baseURL: "https://optionsprophub.com/"
+languageCode: en-us
+title: "Options Prop Hub"
+theme: "PaperMod"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  title: Options Prop Hub
+  description: "COMING SOON"
+  defaultTheme: light
+  disableThemeToggle: true
+  
+  # Profile Mode = Professional Landing Page
+  profileMode:
+    enabled: true
+    title: "Options Prop Hub"
+    subtitle: "COMING SOON" # <--- Placeholder
+    imageUrl: "" 
+    imageTitle: "Options Prop Hub"
+    buttons:
+      # I commented these out so no buttons appear yet
+      # - name: Top 3 Options Firms
+      #   url: /posts/best-options-prop-firms/
+
+  # Social & SEO
+  assets:
+    disableHLJS: true
+  
+menu:
+  main:
+    - identifier: home
+      name: "Home"
+      url: /
+      weight: 10
+    - identifier: reviews
+      name: "Reviews"  # Better than "Blog"
+      url: /posts/
+      weight: 20
+    - identifier: about
+      name: "About"
+      url: /about/
+      weight: 30
+    - identifier: contact
+      name: "Contact"
+      url: /contact/
+      weight: 40

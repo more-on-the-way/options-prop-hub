@@ -1,0 +1,77 @@
+/* 1. Import Fonts (Inter + Libre Baskerville) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Libre+Baskerville:wght@400;700&display=swap');
+
+:root {
+    /* Your Pantone "Radiant Orchid" */
+    --primary: #B565A7; 
+    
+    /* Text Colors */
+    --secondary: #4b5563; 
+    --content: #333333;
+    --theme: #ffffff;
+}
+
+/* 2. Typography */
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333333;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+h1, h2, h3, h4, h5, h6, .title {
+    font-family: 'Libre Baskerville', serif;
+    color: #000000;
+    font-weight: 700;
+}
+
+/* 3. The Logo/Title (Top Left) - NO UNDERLINE */
+.logo a {
+    text-decoration: none !important; /* Force removal of underline */
+    color: #000000;
+}
+
+/* 4. The Menu Links (Top Right) - NO UNDERLINE */
+#menu .menu-item a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: #333333;
+    text-decoration: none; /* Ensure no line sits here */
+}
+
+#menu .menu-item a:hover {
+    color: #000000; /* Just darken the text on hover */
+    text-decoration: none; /* Still no line */
+}
+
+/* 5. The Buttons - RADIANT ORCHID PILLS */
+.button {
+    background: var(--primary);
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 14px 32px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    border: 2px solid var(--primary);
+    text-decoration: none; /* No underline in buttons */
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+    background: #ffffff;
+    color: var(--primary);
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+/* 6. General Links in Articles */
+a {
+    color: #000000;
+    text-decoration: none; /* Removed the default underline */
+}
+
+/* Optional: Only underline links inside paragraphs so people know they are clickable */
+.post-content a {
+    text-decoration: underline;
+    text-decoration-color: var(--primary);
+}
